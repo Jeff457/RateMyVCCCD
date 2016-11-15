@@ -1,0 +1,26 @@
+{
+  "author": "Jeff Stanton",
+  "background": {
+    "persistent": false,
+    "scripts": [ "eventPage.js" ]
+  },
+  "content_scripts": [ {
+    "css": [ "sheet.css" ],
+    "js": [ "main.js" ],
+    "matches": [ "https://ssb.vcccd.edu/" ]
+  } ],
+  "description": "Choose your Ventura County Community College courses more efficiently with ratings from RateMyProfessors.com.",
+  "icons": {
+    "128": "icon.png",
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "manifest_version": 2,
+  "name": "RateMyVCCCD",
+  "page_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [ "http://www.ratemyprofessors.com/*", "tabs" ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0"
+}
